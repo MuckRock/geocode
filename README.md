@@ -23,5 +23,10 @@ To run the geocode script on all agencies, run `python geocode.py`.
 The current external geocoding service is the OSM Nominatim, since it returned the best results.
 To use a different geocoder, replace the URL and the query arguments in the `geocode.geocode_address` method.
 
-To run the goecode script on a subset of agencies, provide additional params to the `geocode.get_agency_list()` method.
-For example, to limit the geocoding to just federal agencies, supply the parameter `{'jurisdiction': 10}`.
+To run the goecode script on a subset of agencies, provide additional params to the `muckrock.agencies` method.
+For example, to limit the geocoding to just approved federal agencies, supply the parameter `{'jurisdiction': 10, 'status': 'approved'}`.
+
+## Install and Run
+
+1. `pip install -r requirements.txt`
+2. `python geocode.py`

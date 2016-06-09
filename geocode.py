@@ -113,5 +113,5 @@ if __name__ == '__main__':
         f.write(unicode(data))
     print 'Wrote agency data to JSON file'
     # Patch the data on the agencies in the list
-    patch_agencies(agency_data)
-    print 'Patched agency data into the API'
+    # patch_agencies(agency_data)
+    # print 'Patched agency data into the API'
