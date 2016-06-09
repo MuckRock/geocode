@@ -19,11 +19,11 @@ An account can be created on the MuckRock website.
 The script will ask you to login each time it's run, unless your MuckRock API token exists in your environment.
 To set that up, run `python muckrock.py` to authenticate and get instructions on adding your token to your environment.
 
-To run the geocode script on all agencies, run `python geocode.py`.
 The current external geocoding service is the OSM Nominatim, since it returned the best results.
 To use a different geocoder, replace the URL and the query arguments in the `geocode.geocode_address` method.
 
-To run the goecode script on a subset of agencies, provide additional params to the `muckrock.agencies` method.
+To run the geocode script on all federal agencies, run `python geocode.py`.
+To run the goecode script on a different subset of agencies, provide different params to the `muckrock.agencies` method.
 For example, to limit the geocoding to just approved federal agencies, supply the parameter `{'jurisdiction': 10, 'status': 'approved'}`.
 
 ## Install and Run
